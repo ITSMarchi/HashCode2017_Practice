@@ -80,12 +80,12 @@ public class Pizza {
         ArrayList comb = new ArrayList();
         for (int i = min; i<=max; i++)
         {
-            for(int j = 1; j <= (i/2) ; j++)
+            for(int j = 1; j <= i ; j++)
             {
                 if(i%j == 0)
                 {
                     k = new ArrayList();
-                    k.add(i);
+                    k.add(j);
                     k.add(i/j);
                     comb.add(k);
                 }   
