@@ -19,7 +19,9 @@ public class Pizza {
         int i;
         int cont=0;
         boolean cond = true;
-        String path = "C:\\Users\\5D_2016-17\\Downloads\\small.in";
+        String workingDir = System.getProperty("user.dir");
+        String path = workingDir+"\\src\\small.in";
+        System.out.println(path);
         String sa[];
         
         String s;
