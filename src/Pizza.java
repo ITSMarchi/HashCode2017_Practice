@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -73,27 +75,24 @@ public class Pizza {
     
     public static void calcolaBlocchettieheheh()
     {
-        System.out.print("hehehehehehe");
         int min = l*2;
         int max = h;
-        ArrayList k = new ArrayList();
-        ArrayList comb = new ArrayList();
+        ArrayList<ArrayList<Integer>> z;
+        z = new ArrayList<>();
         for (int i = min; i<=max; i++)
         {
             for(int j = 1; j <= i ; j++)
             {
                 if(i%j == 0)
                 {
-                    k = new ArrayList();
-                    k.add(j);
-                    k.add(i/j);
-                    comb.add(k);
+                    z.add(new ArrayList<Integer>(Arrays.asList(i,i/j)));
                 }   
             }
         }
-        for(int i=0; i < comb.size(); i++)
+        for(int i=0; i < z.size(); i++)
         {
-            System.out.print(comb.get(i));
+            //System.out.print(comb.get(i));
+            System.out.print(z.get(i));
         }
     }
 }
