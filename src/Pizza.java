@@ -15,6 +15,7 @@ public class Pizza {
     
     static int r = 0, c = 0, l, h;
     static char sas[][] = new char[1000][1000];
+    static ArrayList<ArrayList<Integer>> z;
     public static void main(String[] args) {
 
         
@@ -22,7 +23,7 @@ public class Pizza {
         int cont=0;
         boolean cond = true;
         String workingDir = System.getProperty("user.dir");
-        String path = workingDir+"\\src\\small.in";
+        String path = workingDir+"\\src\\big.in";
         System.out.println(path);
         String sa[];
         
@@ -77,7 +78,7 @@ public class Pizza {
     {
         int min = l*2;
         int max = h;
-        ArrayList<ArrayList<Integer>> z;
+        
         z = new ArrayList<>();
         for (int i = min; i<=max; i++)
         {
