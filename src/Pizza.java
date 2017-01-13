@@ -13,8 +13,17 @@ import java.util.logging.Logger;
 public class Pizza {
 
     
-    static int r = 0, c = 0, l, h;
+    static Integer r = 0, c = 0, l, h;
     static char sas[][] = new char[1000][1000];
+
+    public static Integer getR() {
+        return r;
+    }
+
+    public static Integer getC() {
+        return c;
+    }
+    
     public static void main(String[] args) {
 
         
