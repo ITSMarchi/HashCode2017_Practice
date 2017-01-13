@@ -15,6 +15,7 @@ public class Pizza {
     
     static Integer r = 0, c = 0, l, h;
     static char sas[][] = new char[1000][1000];
+    static ArrayList<ArrayList<Integer>> z;
 
     public static Integer getR() {
         return r;
@@ -86,7 +87,7 @@ public class Pizza {
     {
         int min = l*2;
         int max = h;
-        ArrayList<ArrayList<Integer>> z;
+        
         z = new ArrayList<>();
         for (int i = min; i<=max; i++)
         {
